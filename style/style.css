@@ -299,7 +299,31 @@ h6 {
   .header__logo{
     transform: scale(0.9);
   }
-  
+  .about__block{
+    width: calc(100vw - 60px);
+  }
+  .about__block__content{
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+  .about__block__name p {
+    font-size: 26px;
+  }
+  .about__desc__text{
+    margin-top: 30px;
+  }
+  .about__desc__button{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about__block__content__image{
+    max-height: 320px;
+    overflow: hidden;
+  }
+  .about__block__content__image img {
+    width: 100%;
+  }
 }
 
 
