@@ -228,12 +228,35 @@ h6 {
 }
 .about__block__content__desc{
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about__desc__text{
   font-size: 16px;
   line-height: 24px; 
 }
+.about__desc__text p:first-child{
+  margin-bottom: 10px;
+}
+.about__desc__button a{
+  display: flex;
+  width: 156px;
+  height: 43px;
+  border: 1px solid #fff;
+  align-items: center;
+  justify-content: center;
+}
+.about__desc__button a p {
+  display: block;
 
+  color: #fff;
+  font-size: 13px;
+}
+.about__desc__button a img{
+  height: 11px;
+  margin-left: 10px;
+}
 
 
 
