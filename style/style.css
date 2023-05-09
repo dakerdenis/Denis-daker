@@ -41,7 +41,11 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: 'Montserrat', sans-serif;
+  
 
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
 body.lock {
@@ -176,6 +180,40 @@ h6 {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 56%, rgba(7, 8, 8, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#070808", GradientType=1);
 }
+
+.services__container{
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+
+}
+.about__container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+
+}
+.about__block{
+  width: 1024px;
+  background-color: #ffffff0c;
+  height: 524px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
