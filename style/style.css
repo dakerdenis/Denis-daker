@@ -198,12 +198,41 @@ h6 {
 }
 .about__block{
   width: 1024px;
-  background-color: #ffffff0c;
-  height: 524px;
+
+  background-image: url(../imgs/about_back.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
 }
-
-
-
+.about__block__name{
+  display: flex;
+  flex-direction: column;
+  
+}
+.about__block__name p {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.about__block__name__line{
+  width: 135px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 30px;
+}
+.about__block__content{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__block__content__desc{
+  max-width: 500px;
+}
+.about__desc__text{
+  font-size: 16px;
+  line-height: 24px; 
+}
 
 
 
