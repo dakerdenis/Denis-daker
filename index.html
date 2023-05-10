@@ -67,19 +67,19 @@
         <h3>Services container</h3>
         <div class="container">
 
-            <div class="number__counter">
-              <div class="number__1">
-                <p id="number__counter">01</p>/02
-              </div>
-
-
-              <div  class="arrow__counter">
-                <a id="arrow_front" > ARROW ВПЕРЁД</a>
-              </div>
-              <div id="arrow_back" class="arrow__counter">
-                ARROW НАЗАД
-              </div>
+          <div class="number__counter">
+            <div class="number__1">
+              <p id="number__counter">01</p>/02
             </div>
+
+
+            <div class="arrow__counter">
+              <a id="arrow_front"> ARROW ВПЕРЁД</a>
+            </div>
+            <div  class="arrow__counter">
+              <a id="arrow_back" >ARROW НАЗАД</a>
+            </div>
+          </div>
 
 
 
@@ -94,15 +94,22 @@
             <p>О нас</p>
             <div class="about__block__name__line"></div>
           </div>
-          
+
           <div class="about__block__content">
             <div class="about__block__content__desc">
               <div class="about__desc__text">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
 
-                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                  Ipsum.</p>
 
               </div>
               <div class="about__desc__button">
@@ -117,9 +124,9 @@
               <img src="./imgs/about_page.png" alt="">
             </div>
           </div>
-          
-        
-        
+
+
+
 
         </div>
       </div>
@@ -143,6 +150,25 @@
   <!---header navigation------>
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="./js/"></script>
+
+  <script>
+let number__counter = document.querySelector('#number__counter');
+const arrow_front = document.querySelector("#arrow_front");
+const arrow_back = document.querySelector('#arrow_back');
+
+arrow_front.addEventListener("click", () => {
+  console.log("suka");
+  number__counter.innerText = "02";
+})
+
+
+arrow_back.addEventListener("click", () => {
+    console.log("suka");
+    number__counter.innerText = "01";
+  })
+  
+  
+  </script>
 </body>
 
 </html>
