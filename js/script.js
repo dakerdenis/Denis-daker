@@ -238,5 +238,11 @@ $(function () {
 
 
 const number__counter = document.querySelector('#number__counter');
-const arrow_fornt = document.querySelector('#arrow_front');
+const arrow_front = document.querySelector("#arrow_front");
 const arrow_back = document.querySelector('#arrow_back');
+
+arrow_front.addEventListener("click", () => {
+    alert("suka");
+    console.log("suka");
+    number__counter.innerText = '02';
+})
