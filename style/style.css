@@ -265,6 +265,7 @@ h6 {
 .contact__container{
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 
 
@@ -280,15 +281,22 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 40px;
-
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  top: 40%;
 }
+
+
 .block__example__Wrapper{
   background-color: #fff;
   margin-top: 5px;
   width: 100%;
-  height: 200px;
+height: 100%;
   padding: 5px;
   overflow: hidden;
+  position: absolute;
+  z-index: 15;
 }
 .block__example__main{
   height: 100%;
@@ -301,9 +309,34 @@ h6 {
 }
 .block__example__sub{
   background-color: green;
-  height: 100%;
+  height: 538px;
   width: 49%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  position: relative;
 }
+.block__example__sub2{
+  flex-direction: row-reverse;
+  padding-right: 5%;
+}
+.block__contact__container{
+  height: 100%;
+  width: 838px;
+  background-color: blue;
+}
+.number__1 {
+}
+
+.arrow__counter {
+
+  position: absolute;
+}
+.arrow__counter_forward{
+  top: 45%;
+  right: 10%;
+}
+
 .block__example__main{
 
 }
@@ -334,12 +367,6 @@ h6 {
 
 
 
-.number__1 {
-}
-
-.arrow__counter {
-  margin-top: 25px;
-}
 
 
 
