@@ -17,13 +17,15 @@
   <meta name="GENERATOR" content="Daker Creative Studio" />
   <meta name="google-site-verification" content="" />
   <!---header navigation----->
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style/style.css" />
 
 
 </head>
 
 <body>
+
   <div class="main__wrapper">
     <!--background image----->
     <div class="background__image">
@@ -64,8 +66,27 @@
     <div class="main__content">
       <!-------services category-->
       <div class="services__container">
-        <h3>Services container</h3>
 
+        <!-- partial:index.partial.html -->
+        <div class="wrapper d-flex flex-nowrap">
+          <section
+            class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+            Part One
+          </section>
+          <section
+            class="section section--dark section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+            Part Two
+          </section>
+          <section class="section section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+            Part Three
+          </section>
+          <section
+            class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+            Part Four
+          </section>
+        </div>
+
+        <div class="center-marker"></div>
       </div>
       <!----about us category----->
       <div class="about__container">
@@ -195,7 +216,7 @@
                     </div>
 
                     <div class="block__contact__form__button">
-                        <a href="#">Отправить</a>
+                      <a href="#">Отправить</a>
                     </div>
 
                   </form>
@@ -245,6 +266,10 @@
 
 
   </script>
+
+  <!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
 </body>
 
 </html>

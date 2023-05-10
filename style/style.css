@@ -187,7 +187,7 @@ h6 {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-
+  overflow-x: hidden;
 }
 .about__container{
   width: 100%;
@@ -476,6 +476,60 @@ height: 100%;
   justify-content: center;
   color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+  font-size: 5rem;
+}
+.section--large {
+  width: 100vw;
+  background-color: #8d3dae;
+  color: white;
+}
+.section--small {
+  width: 46rem;
+}
+.section--dark {
+  color: white;
+  background-color: black;
+}
+
+section {
+  font-weight: 900;
+  transition: color 0.3s;
+}
+
+
 
 
 @media only screen and (max-width: 1450px) {
