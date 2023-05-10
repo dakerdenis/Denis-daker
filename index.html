@@ -80,9 +80,9 @@
             <div id="count__train" class="block__example__main">
               <div class="block__example__sub">
                 <div class="arrow__counter arrow__counter_forward">
-                  <a id="arrow_front"> 
+                  <a id="arrow_front">
                     <p>
-                      Форма обратной связи 
+                      Форма обратной связи
                     </p>
 
                     <img src="./imgs/arrow.png" alt="">
@@ -90,43 +90,64 @@
                 </div>
 
                 <div class="block__contact__container">
-                  
-                      <div class="block__contact__name">
-                        <p>Контакты</p>
-                        <div class="block__contact__name-line"></div>
-                      </div>
 
-                      <div class="block__contact__data">
-                        <div class="contact__numbers__desc">
-                          <p>Телефонные номера</p>
-                        </div>
-                        <div class="contact__numbers__num">
-                          <p>+994 50 750 69 01</p>
-                          <p>+994 50 750 69 01</p>
-                          <p>+994 50 750 69 01</p>
-                        </div>
-                        <div class="contact__email__desc">
-                          <p>Электронная почта</p>
-                        </div>
-                        <div class="contact__email__mail">
-                          <p>contact@daker.website</p>
-                        </div>
-                      </div>
+                  <div class="block__contact__name">
+                    <p>Контакты</p>
+                    <div class="block__contact__name-line"></div>
+                  </div>
+
+                  <div class="block__contact__data">
+                    <div class="contact__numbers__desc">
+                      <p>Телефонные номера</p>
+                    </div>
+                    <div class="contact__numbers__num">
+                      <p>+994 50 750 69 01</p>
+                      <p>+994 50 750 69 01</p>
+                      <p>+994 50 750 69 01</p>
+                    </div>
+                    <div class="contact__email__desc">
+                      <p>Электронная почта</p>
+                    </div>
+                    <div class="contact__email__mail">
+                      <p>contact@daker.website</p>
+                    </div>
+                  </div>
 
                 </div>
               </div>
               <div class="block__example__sub block__example__sub2">
-                <div  class="arrow__counter arrow__counter_backward">
-                  <a id="arrow_back" >
+                <div class="arrow__counter arrow__counter_backward">
+                  <a id="arrow_back">
                     <p>
-                      Контактные данные 
+                      Контактные данные
                     </p>
 
                     <img src="./imgs/arrow.png" alt="">
                   </a>
                 </div>
-                <div class="block__contact__container">
+                <div class="block__contact__container block__contact__container2">
+                  <div class="block__contact__name">
+                    <p>Обратная связь</p>
+                    <div class="block__contact__name-line"></div>
+                  </div>
 
+                  <form action="#" class="block__contact__form">
+                    <div class="block__contact__form__element">
+                      <input type="text" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="block__contact__form__element">
+                      <input type="text" placeholder="Телефон или e-mail">
+                    </div>
+
+                    <div class="block__contact__form__element">
+                      <input type="text" placeholder="Сообщение">
+                    </div>
+                    <div class="block__contact__form__button">
+
+                    </div>
+
+                  </form>
                 </div>
               </div>
             </div>
@@ -204,29 +225,29 @@
   <script src="./js/"></script>
 
   <script>
-let number__counter = document.querySelector('#number__counter');
-const arrow_front = document.querySelector("#arrow_front");
-const arrow_back = document.querySelector('#arrow_back');
-const count__train = document.querySelector('#count__train');
+    let number__counter = document.querySelector('#number__counter');
+    const arrow_front = document.querySelector("#arrow_front");
+    const arrow_back = document.querySelector('#arrow_back');
+    const count__train = document.querySelector('#count__train');
 
-arrow_front.addEventListener("click", async  () => {
-  console.log("suka");
-  number__counter.innerText = "02";
-  count__train.classList.add('train');
-  count__train.style.animationName = "train_function_forward";
- //   for(let i = 0; i < 51; i ++){
- //     count__train.style.transform=`translate(-${i}%)`;  
- //     setTimeout( await function suka(){console.log('suka')},1000)  ;
- // }
+    arrow_front.addEventListener("click", async () => {
+      console.log("suka");
+      number__counter.innerText = "02";
+      count__train.classList.add('train');
+      count__train.style.animationName = "train_function_forward";
+      //   for(let i = 0; i < 51; i ++){
+      //     count__train.style.transform=`translate(-${i}%)`;  
+      //     setTimeout( await function suka(){console.log('suka')},1000)  ;
+      // }
 
-})
-arrow_back.addEventListener("click", () => {
-    number__counter.innerText = "01";
+    })
+    arrow_back.addEventListener("click", () => {
+      number__counter.innerText = "01";
 
-    count__train.style.animationName = "train_function_backward";
-  })
-  
-  
+      count__train.style.animationName = "train_function_backward";
+    })
+
+
   </script>
 </body>
 
