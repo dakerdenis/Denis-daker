@@ -440,7 +440,7 @@ height: 100%;
 }
 
 .block__contact__form{
-  margin-top: 75px;
+  margin-top: 40px;
   width: 100%;
 }
 .block__contact__form__element{
@@ -461,8 +461,21 @@ height: 100%;
   color: #fff;
   padding: 2px 0px;
 }
-
-
+.block__contact__form__button { 
+  height: 42px;
+  margin-top: 52px;
+}
+.block__contact__form__button a{
+  height: 41px;
+  width: 170px;
+  display: block;
+  border: 1px solid #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 
 
 @media only screen and (max-width: 1450px) {
