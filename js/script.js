@@ -235,20 +235,5 @@ $(function () {
 
 });
 
-let number__counter = document.querySelector('#number__counter');
-const arrow_front = document.querySelector("#arrow_front");
-const arrow_back = document.querySelector('#arrow_back');
 
-arrow_front.addEventListener("click", () => {
-  console.log("suka");
-  number__counter.innerText = "02";
-})
-
-
-arrow_back.addEventListener("click", () => {
-    console.log("suka");
-    number__counter.innerText = "01";
-  })
-  
-  
 

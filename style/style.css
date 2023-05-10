@@ -305,8 +305,32 @@ h6 {
   width: 49%;
 }
 .block__example__main{
-  transform: translateX(-50%);
+
 }
+
+
+.train{
+  animation:   0.5s ease-in forwards;
+}
+@keyframes train_function_forward {
+  0%{
+    transform: translate(0%);
+  }
+  100%{
+    transform: translate(-50%);
+  }
+}
+@keyframes train_function_backward {
+  0%{
+    transform: translate(-50%);
+  }
+  100%{
+    transform: translate(0%);
+  }
+}
+
+
+
 
 
 

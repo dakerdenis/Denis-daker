@@ -165,15 +165,21 @@ const arrow_front = document.querySelector("#arrow_front");
 const arrow_back = document.querySelector('#arrow_back');
 const count__train = document.querySelector('#count__train');
 
-arrow_front.addEventListener("click", () => {
+arrow_front.addEventListener("click", async  () => {
   console.log("suka");
   number__counter.innerText = "02";
+  count__train.classList.add('train');
+  count__train.style.animationName = "train_function_forward";
+ //   for(let i = 0; i < 51; i ++){
+ //     count__train.style.transform=`translate(-${i}%)`;  
+ //     setTimeout( await function suka(){console.log('suka')},1000)  ;
+ // }
+
 })
-
-
 arrow_back.addEventListener("click", () => {
-    console.log("suka");
     number__counter.innerText = "01";
+
+    count__train.style.animationName = "train_function_backward";
   })
   
   
