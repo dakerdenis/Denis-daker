@@ -282,6 +282,34 @@ h6 {
   padding: 40px;
 
 }
+.block__example__Wrapper{
+  background-color: #fff;
+  margin-top: 5px;
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  overflow: hidden;
+}
+.block__example__main{
+  height: 100%;
+  width: 200vw;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.block__example__sub{
+  background-color: green;
+  height: 100%;
+  width: 49%;
+}
+.block__example__main{
+  transform: translateX(-50%);
+}
+
+
+
 .number__1 {
 }
 
