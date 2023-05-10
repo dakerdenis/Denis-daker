@@ -234,3 +234,9 @@ $(function () {
     });
 
 });
+
+
+
+const number__counter = document.querySelector('#number__counter');
+const arrow_fornt = document.querySelector('#arrow_front');
+const arrow_back = document.querySelector('#arrow_back');

@@ -135,6 +135,8 @@ h6 {
   position: absolute;
   bottom: 40px;
   right: 40px;
+  color: #fff;
+  
 
 }
 .image__bottom_text a {
@@ -267,6 +269,24 @@ h6 {
 
 
 
+
+
+.number__counter {
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.number__1 {
+}
+
+.arrow__counter {
+  margin-top: 25px;
+}
 
 
 
