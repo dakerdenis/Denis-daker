@@ -536,6 +536,26 @@ section {
   .background__image{
     background-image: url(../imgs/back1440.png);
   }
+  .block__example__sub {
+    height: 470px;
+  }
+  .block__contact__container {
+    width: 720px;
+    padding: 75px;
+  }
+  .block__contact__name {
+    font-size: 40px;
+  }
+  .arrow__counter_forward {
+    top: 15%;
+    right: 10%;
+  }
+  .arrow__counter_backward{
+    top: 15%;
+  }
+  .block__example__sub2 {
+    padding-right: 6%;
+  }
 }
 
 @media only screen and (max-width: 780px) {
