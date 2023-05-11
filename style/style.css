@@ -97,7 +97,9 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-
+p{
+  margin: 0;
+}
 .main__wrapper {
   margin: 0 auto;
   position: relative;
@@ -558,6 +560,17 @@ section {
   }
 }
 
+@media only screen and (max-width: 1370px) {
+.block__example__sub{
+
+}
+.header__container {
+  height: 70px;
+}
+.block__contact__container{
+  padding: 60px;
+}
+}
 @media only screen and (max-width: 780px) {
   .background__image{
     background-image: url(../imgs/back_mobile.png);
@@ -597,6 +610,12 @@ section {
   }
   .about__desc__button{
     margin-top: 30px;
+  }
+  .block__example__sub{
+    padding-left: 0;
+  }
+  .block__example__sub2{
+    padding-right: 10px;
   }
 }
 @media only screen and (max-width: 450px) {
