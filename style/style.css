@@ -617,6 +617,34 @@ section {
   .block__example__sub2{
     padding-right: 10px;
   }
+  .block__contact__container{
+    padding: 50px;
+  }
+  .block__contact__name {
+    font-size: 30px;
+  }
+  .block__contact__name-line {
+    margin-top: 20px;
+  }
+  .number__counter {
+    top: initial;
+    bottom: 5%;
+  }
+  .arrow__counter_forward{
+    top: initial;
+    right: initial;
+    bottom: -20%;
+    left: 5%;
+  }
+  .arrow__counter_backward{
+    top: initial;
+    right: initial;
+    bottom: -20%;
+    left: 5%;
+  }
+  .block__contact__form {
+    margin-top: 25px;
+  }
 }
 @media only screen and (max-width: 450px) {
   .about__block__content__image{
