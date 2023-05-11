@@ -694,8 +694,26 @@ section {
     margin-top: 40px;
   }
   .block__contact__name{
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
+  .arrow__counter_forward {
+    bottom: -17%;
+  }
+  .arrow__counter_backward{
+    bottom: -17%;
+  }
+}
+@media only screen and (max-width: 350px) {
+.block__contact__name {
+  font-size: 25px;
+}
+.number__counter {
+  right: 20px;
+}
+.block__contact__form__button a{
+  height: 40px;
+  width: 170px;
+}
 }
 
 
