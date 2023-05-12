@@ -893,6 +893,15 @@ section {
   display: flex;
   visibility: visible;
 }
+.about__block{
+  background-image: none;
+}
+.about__desc__text{
+  font-size: 14px;
+}
+.about__block{
+  padding: 0;
+}
 }
 @media only screen and (max-width: 450px) {
   .about__block__content__image{
