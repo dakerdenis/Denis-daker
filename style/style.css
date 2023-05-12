@@ -696,7 +696,23 @@ section {
 
 
 
+.image__bottom_text_mobile{
 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 83%;
+  margin: 0 auto;
+  display: none;
+  visibility: hidden;
+}
+.image__bottom_text_mobile a {
+  color: #ffffff;
+    margin-right: 14px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
 @media only screen and (max-width: 1450px) {
   .background__image{
     background-image: url(../imgs/back1440.png);
@@ -862,10 +878,20 @@ section {
 .navigation__block{
   width: 100%;
   background-image: url(../imgs/mobile_nav.svg);
+
+  backdrop-filter: blur(5px);
 }
 .image__right__text, .image__left__text{
   display: none;
   visibility: hidden;
+}
+.image__bottom_text2{
+  display: none;
+  visibility: hidden;
+}
+.image__bottom_text_mobile{
+  display: flex;
+  visibility: visible;
 }
 }
 @media only screen and (max-width: 450px) {
