@@ -565,10 +565,17 @@ height: 100%;
   z-index: 50;
 }
 .navigation__block{
-  
+  z-index: 55;
+  min-width: 550px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 500px;
+  background-color: red;
 }
 .nav.active {
   transform: translateX(0);
+
 }
 
 .nav .nav__list_item {
