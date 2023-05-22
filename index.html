@@ -19,12 +19,12 @@
   <!---header navigation----->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  
+
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
-  
-  
-  
+
+
+
   <link rel="stylesheet" href="./style/style.css" />
 
 
@@ -176,23 +176,20 @@
           </div>
 
 
-          <!-- Slider main container -->
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">Slide 1 dasdasdasd</div>
-              <div class="swiper-slide">Slide 2 dasads <br><br><br>ROBOTSbr
-              </div>
+                <!-- Slides -->
+                <div class="swiper-slide">Slideasdasd 1</div>
+              <div class="swiper-slide">Slide 2</div>
               <div class="swiper-slide">Slide 3</div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-
+            
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+            <di
         </div>
 
       </div>
@@ -371,21 +368,14 @@
 
       count__train.style.animationName = "train_function_backward";
     })
-
-
-
     let menuBtn = document.querySelector('.menu-btn');
     let menu = document.querySelector('.nav');
     let menuItem = document.querySelectorAll('.nav__link');
-    let fakeBtn = document.querySelector('.header__burger')
-
-
+    let fakeBtn = document.querySelector('.header__burger');
     fakeBtn.addEventListener('click', function () {
       menuBtn.classList.toggle('active');
       menu.classList.toggle('active');
     })
-
-
     menuItem.forEach(function (menuItem) {
       menuItem.addEventListener('click', function () {
         menuBtn.classList.toggle('active');
@@ -394,6 +384,24 @@
     })
 
 
+
+    var menu2 = ['Slide 1', 'Slide 2', 'Slide 3'];
+    var mySwiper = new Swiper('.swiper-container', {
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu2[index]) + '</span>';
+        },
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 
   <!-- partial -->
@@ -401,7 +409,7 @@
   <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
-  
+
 
 </body>
 
