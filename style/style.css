@@ -221,7 +221,7 @@ p{
   width: 90%;
   margin: 0 auto;
 
-  min-height: 70vh;
+  min-height: 65vh;
 }
 .services__block__name__line{
   padding-top: 0;
@@ -239,19 +239,18 @@ p{
     }
 
     .swiper-slide {
-      text-align: center;
+
       font-size: 18px;
 
       /* Center slide text vertically */
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
       min-height: 70vh;
       color: #fff;
       background-image: url(../imgs/about_back.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      padding: 40px 60px 40px 60px;
     }
     .swiper-pagination {
       position: absolute;
@@ -277,7 +276,53 @@ p{
       color: #000;
       background: #fff;
     }
+    .services_swiper_name1 {
+      font-size: 25px;
+      margin-bottom: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services_swiper_name1_line {
+      height: 1px;
+      width: 120px;
+      background-color: #D9D9D9;
+      margin-top: 10px;
+    }
+    .services_swiper_web_content {
+      display: flex;
+      justify-content: space-between;
+  
+    }
+    .services_swiper_web_content_img {
+      background-color: #D9D9D9;
+      width: 40%;
+      height: 40vh;
+      overflow: hidden;
+      background-color: #1F9D96;
+      background-image: url('../imgs/about_page.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
+    .services_swiper_web_content_text {
+      width: 50%;
+
+    }
+    .services_swiper_web_content_text p{
+      text-align: justify;
+      font-size: 18px;
+      line-height: 35px;
+    }
+    .services_swiper_web_content_link {
+      position: absolute;
+      background-color: #1F9D96;
+      color: #fff;
+      padding: 10px 30px;
+      font-size: 18px;
+      right: 40%;
+    }
 
 
 
