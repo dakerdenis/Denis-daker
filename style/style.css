@@ -241,13 +241,17 @@ p{
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+
       /* Center slide text vertically */
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      color: #000;
+      min-height: 70vh;
+      color: #fff;
+      background-image: url(../imgs/about_back.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .swiper-pagination {
       position: absolute;
@@ -265,13 +269,13 @@ p{
       text-align: center;
       line-height: 30px;
       font-size: 12px;
-      color: #000;
+      color: #fff;
       opacity: 1;
       background: rgba(0, 0, 0, 0.2);
     }
     .swiper-pagination-bullet-active {
-      color: #fff;
-      background: #007aff;
+      color: #000;
+      background: #fff;
     }
 
 
