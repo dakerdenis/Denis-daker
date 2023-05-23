@@ -178,8 +178,29 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">Веб разработка 
-                  <br><br><br>
+                <div class="swiper-slide">
+                  <div class="services_swiper_name1">
+                    <p>Веб разраюотка</p>
+                    <div class="services_swiper_name1_line"></div>
+                  </div>
+
+                  <div class="services_swiper_web_content">
+                    <div class="services_swiper_web_content_img">
+                      <img src="" alt="">
+                    </div>
+                    <div class="services_swiper_web_content_text">
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minus eaque vitae rem
+                        perspiciatis nam optio omnis. Maiores nobis, odio esse sequi quis a accusantium repudiandae
+                        voluptates natus eos deleniti?
+                      </p>
+                      <a href="#" class="services_swiper_web_content_link">
+                        Узнать больше
+                      </a>
+                    </div>
+
+                  </div>
+
                 </div>
                 <div class="swiper-slide">Дизайн и брендинг</div>
                 <div class="swiper-slide">Настройка сетей</div>
@@ -392,23 +413,23 @@
 
 
 
-  var menu2 = ['Slide 1 asdasdasdasd', 'Slide 2 safasf', 'Slide 3ggwgs']
-var mySwiper = new Swiper ('.mySwiper', {
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-			clickable: true,
+    var menu2 = ['Slide 1 asdasdasdasd', 'Slide 2 safasf', 'Slide 3ggwgs']
+    var mySwiper = new Swiper('.mySwiper', {
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (menu2[index]) + '</span>';
         },
-    },
+      },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  })
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
 
 
 
