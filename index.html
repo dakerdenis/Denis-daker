@@ -167,6 +167,23 @@
 
 
     <div class="main__content">
+      <!---Общая инфа---->
+      <div class="additional__container">
+        <div class="screen">  
+          <div class="screen-image"></div>  
+          <div class="screen-overlay"></div>  
+          <div class="screen-content">
+            <i class="screen-icon fa-brands fa-codepen"></i>
+            <div class="screen-user">
+              <span class="name" data-value="CODEPEN">CODEPEN</span>
+              <a class="link" href="https://youtube.com/@Hyperplexed" target="_blank">@Hyperplexed</a>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
       <!-------services category-->
       <div class="services__container">
         <div class="services__block">
@@ -180,8 +197,8 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="services_swiper_name1">
-                    <p>Веб разработка</p>
-                    <div class="services_swiper_name1_line"></div>
+
+
                   </div>
 
                   <div class="services_swiper_web_content">
@@ -195,14 +212,20 @@
                         voluptates natus eos deleniti?
                       </p>
                       <a href="#" class="services_swiper_web_content_link">
-                        Узнать больше
+
+                        <p>Узнать больше</p>
+                        <img src="./imgs/about_arrow.svg" alt="">
                       </a>
                     </div>
 
                   </div>
 
                 </div>
-                <div class="swiper-slide">Дизайн и брендинг</div>
+                <div class="swiper-slide">
+                  <div class="services__design__container">
+
+                  </div>
+                </div>
                 <div class="swiper-slide">Настройка сетей</div>
               </div>
 
@@ -412,7 +435,7 @@
 
 
 
-    var menu2 = ['Slide 1 asdasdasdasd', 'Slide 2 safasf', 'Slide 3ggwgs']
+    var menu2 = ['Веб разработка', 'Дизайн и брендинг', 'Настройка сетей']
     var mySwiper = new Swiper('.mySwiper', {
       // If we need pagination
       pagination: {
