@@ -138,8 +138,13 @@ p{
   bottom: 40px;
   right: 40px;
   color: #fff;
-  overflow: hidden;
-
+height: 30px;
+overflow: hidden;
+}
+.deactive_social{
+  display: none;
+  visibility: hidden;
+  bottom: -100%;
 }
 .image__bottom_text a {
   color: #ffffff;
