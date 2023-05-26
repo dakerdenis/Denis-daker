@@ -768,7 +768,21 @@ overflow: hidden;
 
       display: flex;
       align-items: center;
+
+
+
+      display: flex;
+      padding: 10px 30px;
+      margin: 40px 0;
+      color: #03e9f4;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+      letter-spacing: 4px;
+      overflow: hidden;
     }
+
+
     .services_swiper_web_content_link img {
       margin-left: 15px;
     }
