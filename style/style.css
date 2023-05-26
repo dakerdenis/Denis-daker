@@ -138,7 +138,7 @@ p{
   bottom: 40px;
   right: 40px;
   color: #fff;
-  
+  overflow: hidden;
 
 }
 .image__bottom_text a {
@@ -1465,6 +1465,7 @@ height: 100%;
 .image__bottom_text2{
   display: none;
   visibility: hidden;
+
 }
 .image__bottom_text_mobile{
   display: flex;
