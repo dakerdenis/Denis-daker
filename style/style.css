@@ -781,7 +781,6 @@ overflow: hidden;
       display: flex;
       padding: 10px 30px;
       margin: 40px 0;
-      color: #03e9f4;
       text-decoration: none;
       text-transform: uppercase;
       transition: 0.5s;
@@ -1265,9 +1264,28 @@ height: 100%;
 
 
 
+html {
 
+}
+body{
 
+}
 
+.cursor {
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference; 
+  background-color: transparent;
+  z-index: 10000;
+  border: 2px solid white;
+  height: 30px;
+  width: 30px;
+  transition: all 300ms ease-out;
+}
 
 
 

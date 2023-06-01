@@ -32,7 +32,9 @@
 
 <body>
 
-  <div class="main__wrapper">
+
+  <div class="main__wrapper" id="main__wrapper_cursor">
+
     <!--background image----->
     <div class="background__image">
 
@@ -163,17 +165,76 @@
       </div>
 
     </div>
-
+    <div class='cursor' id="cursor"></div>
 
 
     <div class="main__content">
+
       <!---Общая инфа---->
       <div class="additional__container">
 
 
+        
+        
 
 
       </div>
+      <!----about us category----->
+      <div class="about__container" id="about__cursor">
+
+        <div class="about__block">
+
+          <div class="about__block__name">
+            <p>О нас</p>
+            <div class="about__block__name__line"></div>
+          </div>
+
+          <div class="about__block__content">
+            <div class="about__block__content__desc">
+              <div class="about__desc__text">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+
+                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                  Ipsum.</p>
+
+              </div>
+              <div class="about__desc__button">
+                <a href="#">
+                  <p>Сервисы</p>
+                  <img src="./imgs/about_arrow.svg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="about__block__content__image">
+              <div class="screen">
+                <div class="screen-image"></div>
+                <div class="screen-overlay"></div>
+                <div class="screen-content">
+                  <i class="screen-icon fa-brands fa-codepen"></i>
+                  <div class="screen-user">
+                    <span class="name" data-value="CODEPEN">TEAM</span>
+                    <a class="link" href="https://youtube.com/@Hyperplexed" target="_blank">@dakerdev</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
       <!-------services category-->
       <div class="services__container">
         <div class="services__block">
@@ -216,7 +277,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="services__design__container">
-                      
+
                   </div>
                 </div>
                 <div class="swiper-slide">Настройка сетей</div>
@@ -359,60 +420,6 @@
         </div>
 
       </div>
-      <!----about us category----->
-      <div class="about__container">
-        <div class="about__block">
-
-          <div class="about__block__name">
-            <p>О нас</p>
-            <div class="about__block__name__line"></div>
-          </div>
-
-          <div class="about__block__content">
-            <div class="about__block__content__desc">
-              <div class="about__desc__text">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                  software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-
-                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                  Ipsum.</p>
-
-              </div>
-              <div class="about__desc__button">
-                <a href="#">
-                  <p>Сервисы</p>
-                  <img src="./imgs/about_arrow.svg" alt="">
-                </a>
-              </div>
-            </div>
-
-            <div class="about__block__content__image">
-              <div class="screen">
-                <div class="screen-image"></div>
-                <div class="screen-overlay"></div>
-                <div class="screen-content">
-                  <i class="screen-icon fa-brands fa-codepen"></i>
-                  <div class="screen-user">
-                    <span class="name" data-value="CODEPEN">TEAM</span>
-                    <a class="link" href="https://youtube.com/@Hyperplexed" target="_blank">@dakerdev</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
 
       <!-------contact with us container---->
 
@@ -524,8 +531,7 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-
-  <script>
+<script>
     let number__counter = document.querySelector('#number__counter');
     const arrow_front = document.querySelector("#arrow_front");
     const arrow_back = document.querySelector('#arrow_back');
@@ -594,9 +600,25 @@
 
 
 
+
+
+
+
+    
+    const main__wrapper_cursor = document.getElementById("about__cursor");
+
+var cursor = document.getElementById("cursor");
+document.body.addEventListener("mousemove", function(e) {
+  cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+});
+
+
+
+
   </script>
 
-  чё
+
 
 
 
